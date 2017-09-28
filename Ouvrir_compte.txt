@@ -1,0 +1,10 @@
+Identification
+->->
+	Nom 		    : Créer compte (Package gestion clientèle)
+	Acteur    	    : Charger clientèle
+	Description     : La création d'un compte doit etre possible pour toutes personnes qui rempli les conditions. 
+	Auteur          : Modeste tra bi																			  
+	Date 			: 28 septembre 2017
+
+Dialogue
+->->
