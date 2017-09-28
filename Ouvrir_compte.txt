@@ -1,10 +1,37 @@
-Identification
-->->
-	Nom 		    : Créer compte (Package gestion clientèle)
+	Nom 		    : Créer compte (Metier : Ouvrir compte)
 	Acteur    	    : Charger clientèle
 	Description     : La création d'un compte doit etre possible pour toutes personnes qui rempli les conditions. 
 	Auteur          : Modeste tra bi																			  
 	Date 			: 28 septembre 2017
+	
+	Pré-conditions	: L'utilisateur doit etre authentifié en tant que chargé clientèle(Use case : Authentification)
+	Demarrage		: L'utilisateur a demande la page ou formulaire de création de compte d'un client.
 
-Dialogue
-->->
+Description
+
+	Scenario nominal
+	->
+1.	Le système affiche le tableau de bord du chargé clientèle.
+2.	L'utilisateur selectionne la création d'un compte.
+3.	Le système affiche le formulaire web flow de création de compte(Formulaire client-formulaire compte).
+4.	L'utilisateur rempli les differents formulaires avec les infos du client et valide.
+5.	Le système enregistre la création compte retourne au tableau de bord de l'utilisateur et notifie l'utilisateur du succès.
+	
+	Scenario exception
+	->
+	
+	Fin
+	->
+Scenario nominal 	: Sur decision de l'utilisateur, apres le point 5.
+Scenario exception  : 
+
+	Post-conditions	
+	->
+Scenario nominal 	: Le client et son compte ont été enregistrés dans la base de données (Compte est inactif).
+Scenario exception  : 	
+	
+	
+	
+	
+	
+	
